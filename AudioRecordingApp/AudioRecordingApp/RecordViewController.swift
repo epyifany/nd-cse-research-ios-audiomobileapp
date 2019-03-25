@@ -11,19 +11,17 @@ import AVFoundation
 import FirebaseStorage
 import FirebaseDatabase
 
-var list = Array(repeating: "Edit Tag", count: 5)
+var list = [String]()
 //var soundType = Array(repeating: "Sound", count: 100)
-
-var tempInt = 0
-var indexPath = 0
 var numberOfRecords: Int = 0
-
 
 class RecordViewController: UIViewController, AVAudioRecorderDelegate{
     var ref:  DatabaseReference?
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
     var audioPlayer:AVAudioPlayer!
+//    let defaults = UserDefaults.standard
+    
     var audioReference: StorageReference {
         return Storage.storage().reference().child("Audio")
     }
@@ -67,15 +65,14 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate{
     
     //sending values to EditRecordingsViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var editRecordingsViewController = segue.destination as! EditRecordingsViewController
+        let editRecordingsViewController = segue.destination as! EditRecordingsViewController
         editRecordingsViewController.filename = "\(numberOfRecords).m4a"
-        //        editRecordingsViewController.filepath =
-        //
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         
         ref = Database.database().reference()
         
@@ -86,6 +83,13 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate{
         {
             numberOfRecords = number
         }
+        if let myList:[String] = UserDefaults.standard.object(forKey: "myList") as? [String]
+        {
+            list = myList
+            print(list)
+        }
+        
+        
         AVAudioSession.sharedInstance().requestRecordPermission {(hasPermission) in
             if hasPermission
             {

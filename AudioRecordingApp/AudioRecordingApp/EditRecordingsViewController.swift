@@ -71,10 +71,12 @@ class EditRecordingsViewController: UIViewController {
                     self.updateAudio(UID: Auth.auth().currentUser!.uid, Tag: tag, Size: self.filesize, Type: "Sound", url: "\(url!)")
                 }
             }
-            
+            list.append(tag)
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
+            UserDefaults.standard.set(list, forKey: "myList")
+            print(list)
             self.dismiss(animated: true, completion: nil)
         }
-        
     }
     
     

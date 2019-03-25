@@ -34,7 +34,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         if editingStyle == .delete {
             list.remove(at: indexPath.row)
-            
+            UserDefaults.standard.set(list, forKey: "myList")
             tableView.beginUpdates()
             tableView.deleteRows(at: [indexPath], with: .automatic)
             tableView.endUpdates()
@@ -42,12 +42,17 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
         
     }
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "load"), object: nil)
         // Do any additional setup after loading the view.
+        
+    }
+    
+    @objc func loadList(notification: NSNotification){
+        //load data here
+        myTableView.reloadData()
     }
     /*
     // MARK: - Navigation

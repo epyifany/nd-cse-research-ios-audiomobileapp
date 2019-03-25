@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>202579349371-p28oqe3i2ppp1rjc4s6q114kvgml0epr.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.202579349371-p28oqe3i2ppp1rjc4s6q114kvgml0epr</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDeza24Rzn0Q-JiE9wWqGifQWc63_hMxVs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>202579349371</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ndidyyu3.AudioRecordingApp</string>
+	<key>PROJECT_ID</key>
+	<string>audiorecordingapp-ec23c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>audiorecordingapp-ec23c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:202579349371:ios:06479d72dbb45b09</string>
+	<key>DATABASE_URL</key>
+	<string>https://audiorecordingapp-ec23c.firebaseio.com</string>
+</dict>
+</plist>

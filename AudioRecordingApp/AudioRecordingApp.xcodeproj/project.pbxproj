@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8CD136D535DEC901E1F234B4 /* Pods_AudioRecordingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A725AB75DD5D709E4A73B4 /* Pods_AudioRecordingApp.framework */; };
+		F629CDA6224317EA00ED515C /* SettingsTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F629CDA5224317EA00ED515C /* SettingsTabViewController.swift */; };
+		F629CDA8224326F000ED515C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F629CDA7224326F000ED515C /* TableViewController.swift */; };
+		F629CDAA2243508D00ED515C /* EditRecordingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F629CDA92243508D00ED515C /* EditRecordingsViewController.swift */; };
+		F6FF32DC2239F4F800EA809F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FF32DB2239F4F800EA809F /* AppDelegate.swift */; };
+		F6FF32DE2239F4F800EA809F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FF32DD2239F4F800EA809F /* ViewController.swift */; };
+		F6FF32E12239F4F800EA809F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6FF32DF2239F4F800EA809F /* Main.storyboard */; };
+		F6FF32E32239F4F900EA809F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6FF32E22239F4F900EA809F /* Assets.xcassets */; };
+		F6FF32E62239F4F900EA809F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6FF32E42239F4F900EA809F /* LaunchScreen.storyboard */; };
+		F6FF32EE2239F91100EA809F /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FF32ED2239F91100EA809F /* CreateAccountViewController.swift */; };
+		F6FF32F02239F91F00EA809F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FF32EF2239F91F00EA809F /* LoginViewController.swift */; };
+		F6FF32F2223A007400EA809F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6FF32F1223A007300EA809F /* GoogleService-Info.plist */; };
+		F6FF32F4223A0CA100EA809F /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FF32F3223A0C2B00EA809F /* MainTabController.swift */; };
+		F6FF32F6223C25E600EA809F /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FF32F5223C25E600EA809F /* RecordViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		66781850AFCDA27F224E89E6 /* Pods-AudioRecordingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioRecordingApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioRecordingApp/Pods-AudioRecordingApp.release.xcconfig"; sourceTree = "<group>"; };
+		B7A725AB75DD5D709E4A73B4 /* Pods_AudioRecordingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioRecordingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C89137704C21B0F4F5E655BF /* Pods-AudioRecordingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioRecordingApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioRecordingApp/Pods-AudioRecordingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F629CDA5224317EA00ED515C /* SettingsTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabViewController.swift; sourceTree = "<group>"; };
+		F629CDA7224326F000ED515C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		F629CDA92243508D00ED515C /* EditRecordingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRecordingsViewController.swift; sourceTree = "<group>"; };
+		F6FF32D82239F4F800EA809F /* AudioRecordingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioRecordingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6FF32DB2239F4F800EA809F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F6FF32DD2239F4F800EA809F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F6FF32E02239F4F800EA809F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6FF32E22239F4F900EA809F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6FF32E52239F4F900EA809F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6FF32E72239F4F900EA809F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6FF32ED2239F91100EA809F /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		F6FF32EF2239F91F00EA809F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F6FF32F1223A007300EA809F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F6FF32F3223A0C2B00EA809F /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		F6FF32F5223C25E600EA809F /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6FF32D52239F4F800EA809F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CD136D535DEC901E1F234B4 /* Pods_AudioRecordingApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64509F1383B44DB47EA45C00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7A725AB75DD5D709E4A73B4 /* Pods_AudioRecordingApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBB11BDA0BEC1655F1108196 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C89137704C21B0F4F5E655BF /* Pods-AudioRecordingApp.debug.xcconfig */,
+				66781850AFCDA27F224E89E6 /* Pods-AudioRecordingApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F6FF32CF2239F4F800EA809F = {
+			isa = PBXGroup;
+			children = (
+				F6FF32DA2239F4F800EA809F /* AudioRecordingApp */,
+				F6FF32D92239F4F800EA809F /* Products */,
+				DBB11BDA0BEC1655F1108196 /* Pods */,
+				64509F1383B44DB47EA45C00 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F6FF32D92239F4F800EA809F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6FF32D82239F4F800EA809F /* AudioRecordingApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6FF32DA2239F4F800EA809F /* AudioRecordingApp */ = {
+			isa = PBXGroup;
+			children = (
+				F6FF32F3223A0C2B00EA809F /* MainTabController.swift */,
+				F6FF32F1223A007300EA809F /* GoogleService-Info.plist */,
+				F6FF32DB2239F4F800EA809F /* AppDelegate.swift */,
+				F6FF32DD2239F4F800EA809F /* ViewController.swift */,
+				F6FF32DF2239F4F800EA809F /* Main.storyboard */,
+				F629CDA92243508D00ED515C /* EditRecordingsViewController.swift */,
+				F629CDA7224326F000ED515C /* TableViewController.swift */,
+				F629CDA5224317EA00ED515C /* SettingsTabViewController.swift */,
+				F6FF32F5223C25E600EA809F /* RecordViewController.swift */,
+				F6FF32E22239F4F900EA809F /* Assets.xcassets */,
+				F6FF32E42239F4F900EA809F /* LaunchScreen.storyboard */,
+				F6FF32E72239F4F900EA809F /* Info.plist */,
+				F6FF32ED2239F91100EA809F /* CreateAccountViewController.swift */,
+				F6FF32EF2239F91F00EA809F /* LoginViewController.swift */,
+			);
+			path = AudioRecordingApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6FF32D72239F4F800EA809F /* AudioRecordingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6FF32EA2239F4F900EA809F /* Build configuration list for PBXNativeTarget "AudioRecordingApp" */;
+			buildPhases = (
+				2CBFA3BAFB0CC9FF7840ED67 /* [CP] Check Pods Manifest.lock */,
+				F6FF32D42239F4F800EA809F /* Sources */,
+				F6FF32D52239F4F800EA809F /* Frameworks */,
+				F6FF32D62239F4F800EA809F /* Resources */,
+				9C4F16F70A075CAB9DE18A22 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioRecordingApp;
+			productName = AudioRecordingApp;
+			productReference = F6FF32D82239F4F800EA809F /* AudioRecordingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6FF32D02239F4F800EA809F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = NDCSE;
+				TargetAttributes = {
+					F6FF32D72239F4F800EA809F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = F6FF32D32239F4F800EA809F /* Build configuration list for PBXProject "AudioRecordingApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6FF32CF2239F4F800EA809F;
+			productRefGroup = F6FF32D92239F4F800EA809F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6FF32D72239F4F800EA809F /* AudioRecordingApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6FF32D62239F4F800EA809F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6FF32E62239F4F900EA809F /* LaunchScreen.storyboard in Resources */,
+				F6FF32F2223A007400EA809F /* GoogleService-Info.plist in Resources */,
+				F6FF32E32239F4F900EA809F /* Assets.xcassets in Resources */,
+				F6FF32E12239F4F800EA809F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CBFA3BAFB0CC9FF7840ED67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AudioRecordingApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C4F16F70A075CAB9DE18A22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AudioRecordingApp/Pods-AudioRecordingApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioRecordingApp/Pods-AudioRecordingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6FF32D42239F4F800EA809F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6FF32F02239F91F00EA809F /* LoginViewController.swift in Sources */,
+				F6FF32EE2239F91100EA809F /* CreateAccountViewController.swift in Sources */,
+				F6FF32F4223A0CA100EA809F /* MainTabController.swift in Sources */,
+				F629CDA8224326F000ED515C /* TableViewController.swift in Sources */,
+				F629CDA6224317EA00ED515C /* SettingsTabViewController.swift in Sources */,
+				F6FF32F6223C25E600EA809F /* RecordViewController.swift in Sources */,
+				F6FF32DE2239F4F800EA809F /* ViewController.swift in Sources */,
+				F629CDAA2243508D00ED515C /* EditRecordingsViewController.swift in Sources */,
+				F6FF32DC2239F4F800EA809F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F6FF32DF2239F4F800EA809F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6FF32E02239F4F800EA809F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F6FF32E42239F4F900EA809F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6FF32E52239F4F900EA809F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6FF32E82239F4F900EA809F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6FF32E92239F4F900EA809F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6FF32EB2239F4F900EA809F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C89137704C21B0F4F5E655BF /* Pods-AudioRecordingApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47J734W9F8;
+				INFOPLIST_FILE = AudioRecordingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ndidyyu3.AudioRecordingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F6FF32EC2239F4F900EA809F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66781850AFCDA27F224E89E6 /* Pods-AudioRecordingApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47J734W9F8;
+				INFOPLIST_FILE = AudioRecordingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ndidyyu3.AudioRecordingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6FF32D32239F4F800EA809F /* Build configuration list for PBXProject "AudioRecordingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6FF32E82239F4F900EA809F /* Debug */,
+				F6FF32E92239F4F900EA809F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6FF32EA2239F4F900EA809F /* Build configuration list for PBXNativeTarget "AudioRecordingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6FF32EB2239F4F900EA809F /* Debug */,
+				F6FF32EC2239F4F900EA809F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6FF32D02239F4F800EA809F /* Project object */;
+}

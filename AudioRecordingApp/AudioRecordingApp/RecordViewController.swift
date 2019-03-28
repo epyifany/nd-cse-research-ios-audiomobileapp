@@ -11,7 +11,7 @@ import AVFoundation
 import FirebaseStorage
 import FirebaseDatabase
 
-var list = [String]()
+var list = [Int]()
 //var soundType = Array(repeating: "Sound", count: 100)
 var numberOfRecords: Int = 0
 
@@ -83,19 +83,17 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate{
         {
             numberOfRecords = number
         }
-        if let myList:[String] = UserDefaults.standard.object(forKey: "myList") as? [String]
+        if let myList:[Int] = UserDefaults.standard.object(forKey: "myList") as? [Int]
         {
             list = myList
             print(list)
         }
-        
         
         AVAudioSession.sharedInstance().requestRecordPermission {(hasPermission) in
             if hasPermission
             {
                 print( "ACCEPTED")
             }
-            
         }
     }
     
@@ -105,7 +103,6 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate{
         let documentDirectory = paths[0]
         return documentDirectory
     }
-    
     
     //function that display an alert
     func displayAlert(title: String, message: String){

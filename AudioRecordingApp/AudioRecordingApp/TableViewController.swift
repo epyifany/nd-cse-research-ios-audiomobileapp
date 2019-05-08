@@ -8,46 +8,78 @@
 
 import UIKit
 
-class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-    
+class TableViewController: UITableViewController{
+    //, UITableViewDelegate, UITableViewDataSource
+    var recordingsList = [ViewController.Recording]()
     @IBOutlet weak var myTableView: UITableView!
     
-
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    //table view function to select the number of rows
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
     }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+    //table view function to display text in each cell (cell is the name of the prototype cell)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
-        cell.textLabel?.text = String("\(indexPath.row + 1). " + list[indexPath.row])
+        let call_no = list[indexPath.row] - 1
+        print(call_no)
+        print(recordingsList.count)
+
+        cell.textLabel?.text = String(recordingsList[call_no].Date! + " " + recordingsList[call_no].Tag! + " " + recordingsList[call_no].Length!)
         
         return cell
     }
     
-    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+    //table view function to provide permission to edit
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        
+     //table view function to delete an entry in the table view controller
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+       
         if editingStyle == .delete {
             list.remove(at: indexPath.row)
-            
+            UserDefaults.standard.set(list, forKey: "myList")
             tableView.beginUpdates()
             tableView.deleteRows(at: [indexPath], with: .automatic)
             tableView.endUpdates()
-            
+        }
+    }
+
+    override func viewDidLoad() {
+        // Do any additional setup after loading the view.
+        super.viewDidLoad()
+        
+        // call reloading function
+        NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "load"), object: nil)
+        
+//         load tableview data(?)
+        if let blogData = UserDefaults.standard.data(forKey: "myRecordingsList"){
+            print("why")
+            recordingsList = try! JSONDecoder().decode([ViewController.Recording].self, from: blogData)
         }
         
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //https://www.techotopia.com/index.php/Implementing_iOS_8_TableView_Navigation_using_Storyboards_in_Xcode_6_and_Swift
+        
+        let recordingInfoViewController = segue.destination as! RecordingInfoViewController
+        print(self.tableView.indexPathForSelectedRow!.row)
+        print(list)
+        recordingInfoViewController.file_no = myTableView.indexPathForSelectedRow!.row
+    }
     
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @objc func loadList(notification: NSNotification){
+        //reload table view
+        myTableView.reloadData()
+        
+        //reload data
+        if let blogData = UserDefaults.standard.data(forKey: "myRecordingsList"){
+            print("why")
+            recordingsList = try! JSONDecoder().decode([ViewController.Recording].self, from: blogData)
+        }
     }
     /*
     // MARK: - Navigation

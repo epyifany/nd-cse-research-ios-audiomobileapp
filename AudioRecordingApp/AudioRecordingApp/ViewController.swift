@@ -7,13 +7,31 @@
 //
 
 import UIKit
-
+import CoreMedia
 //var numberOfRecords: Int = 0
 
 class ViewController: UIViewController {
 
-//    var FileTags = Array(repeating: "Edit Tag", count: 5)
-    
+    public struct Recording: Codable {
+        public var filename: String?
+        public var AudioID: String?
+        public var Tag: String?
+        public var Length: String?
+        public var Size: String?
+        public var SoundType: String?
+        public var url: String?
+        public var Date: String?
+        public var Time: String?
+    //        "AudioID": audioID,
+    //        "Tag": Tag,
+    //        "Length": Length,
+    //        "Size": Size,
+    //        "Type": Type,
+    //        "url": url,
+    //        "Date": date,
+    //        "Time": uptime
+    }
+
     
     public struct Units {
         
@@ -51,6 +69,10 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    
+    
+    
 //    public var returnFileTags: [String]{
 //        return self.FileTags
 //    }

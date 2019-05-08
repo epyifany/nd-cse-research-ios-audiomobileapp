@@ -11,6 +11,7 @@
 		F629CDA6224317EA00ED515C /* SettingsTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F629CDA5224317EA00ED515C /* SettingsTabViewController.swift */; };
 		F629CDA8224326F000ED515C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F629CDA7224326F000ED515C /* TableViewController.swift */; };
 		F629CDAA2243508D00ED515C /* EditRecordingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F629CDA92243508D00ED515C /* EditRecordingsViewController.swift */; };
+		F65EE16722496F800069B312 /* RecordingInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65EE16622496F800069B312 /* RecordingInfoViewController.swift */; };
 		F6FF32DC2239F4F800EA809F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FF32DB2239F4F800EA809F /* AppDelegate.swift */; };
 		F6FF32DE2239F4F800EA809F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FF32DD2239F4F800EA809F /* ViewController.swift */; };
 		F6FF32E12239F4F800EA809F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6FF32DF2239F4F800EA809F /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		F629CDA5224317EA00ED515C /* SettingsTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabViewController.swift; sourceTree = "<group>"; };
 		F629CDA7224326F000ED515C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		F629CDA92243508D00ED515C /* EditRecordingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRecordingsViewController.swift; sourceTree = "<group>"; };
+		F65EE16622496F800069B312 /* RecordingInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingInfoViewController.swift; sourceTree = "<group>"; };
 		F6FF32D82239F4F800EA809F /* AudioRecordingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioRecordingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6FF32DB2239F4F800EA809F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6FF32DD2239F4F800EA809F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				F6FF32DB2239F4F800EA809F /* AppDelegate.swift */,
 				F6FF32DD2239F4F800EA809F /* ViewController.swift */,
 				F6FF32DF2239F4F800EA809F /* Main.storyboard */,
+				F65EE16622496F800069B312 /* RecordingInfoViewController.swift */,
 				F629CDA92243508D00ED515C /* EditRecordingsViewController.swift */,
 				F629CDA7224326F000ED515C /* TableViewController.swift */,
 				F629CDA5224317EA00ED515C /* SettingsTabViewController.swift */,
@@ -247,6 +250,7 @@
 				F6FF32F6223C25E600EA809F /* RecordViewController.swift in Sources */,
 				F6FF32DE2239F4F800EA809F /* ViewController.swift in Sources */,
 				F629CDAA2243508D00ED515C /* EditRecordingsViewController.swift in Sources */,
+				F65EE16722496F800069B312 /* RecordingInfoViewController.swift in Sources */,
 				F6FF32DC2239F4F800EA809F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

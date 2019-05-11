@@ -90,8 +90,8 @@ class EditRecordingsViewController: UIViewController {
                     print(duration.timeString)
                     
                     //Upload into to firebase database
-                    self.uploadAudioInfo(UID: Auth.auth().currentUser!.uid, Tag: tag, Length: duration.timeString, Size: self.filesize, Type: "Sound", url: "\(url!)", Date: self.filedate, Uptime: self.filetime)
-                    self.saveAudioInfo(UID: Auth.auth().currentUser!.uid, Tag: tag, Length: duration.timeString, Size: self.filesize, Type: "Sound", url: "\(url!)", Date: self.filedate, Uptime: self.filetime, Filename: self.filename)
+                    self.uploadAudioInfo(UID: Auth.auth().currentUser!.uid, Tag: tag, Length: duration.timeString, Size: self.filesize, Type: "Audio", url: "\(url!)", Date: self.filedate, Uptime: self.filetime)
+                    self.saveAudioInfo(UID: Auth.auth().currentUser!.uid, Tag: tag, Length: duration.timeString, Size: self.filesize, Type: "Audio", url: "\(url!)", Date: self.filedate, Uptime: self.filetime, Filename: self.filename)
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
 
                 }

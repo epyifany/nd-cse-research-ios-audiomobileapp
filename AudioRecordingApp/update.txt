@@ -1,0 +1,14 @@
+New firebase
+Website FB 
+Gitlub website and the app
+Mobile app exceptions buttons record 
+
+Settings - information about the user first time opening app 
+Form to fill out 
+Gender age date of birth/speech deficinetly language (language efficiently) device
+Submid discard
+User Name change add user  have a default account 
+
+ASR working with Siri and speech recognition 
+
+

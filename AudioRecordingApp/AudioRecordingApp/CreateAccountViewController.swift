@@ -16,6 +16,9 @@ class CreateAccountViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var ageTextField: UITextField!
+    @IBOutlet weak var genderTextField: UITextField!
+    @IBOutlet weak var languageTextField: UITextField!
+    @IBOutlet weak var languageProfTextField: UITextField!
     
     var ref:  DatabaseReference?
     
@@ -25,7 +28,7 @@ class CreateAccountViewController: UIViewController {
     }
     @IBAction func createAccountTapped(_ sender: Any) {
         
-        if let email = emailTextField.text, let password = passwordTextField.text, let name = nameTextField.text, let age = ageTextField.text {
+        if let email = emailTextField.text, let password = passwordTextField.text, let name = nameTextField.text, let age = ageTextField.text, let gender = genderTextField.text, let language = languageTextField.text, let proficiency = languageProfTextField.text {
             
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                 if let firebaseError = error {
@@ -34,7 +37,7 @@ class CreateAccountViewController: UIViewController {
                 }
                 print("register success!")
                 
-                self.updateProfile(UID: Auth.auth().currentUser!.uid, Email: email, Password: password, Name: name, Age: age)
+                self.updateProfile(UID: Auth.auth().currentUser!.uid, Email: email, Password: password, Name: name, Age: age, Gender : gender, Language : language, Proficiency : proficiency)
                 
                 self.performSegue(withIdentifier: "createAccountToTabSegue", sender: self)
 
@@ -52,12 +55,15 @@ class CreateAccountViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func updateProfile(UID: String, Email: String, Password: String, Name: String, Age: String){
+    func updateProfile(UID: String, Email: String, Password: String, Name: String, Age: String, Gender: String, Language: String, Proficiency: String){
         let profile = [
             "Email": Email,
             "Password": Password,
             "Name": Name,
-            "Age": Age
+            "Age": Age,
+            "Gender": Gender,
+            "Language": Language,
+            "Proficiency": Proficiency
         ]
         print(UID)
         print(Password)
